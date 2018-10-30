@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+	<link rel="stylesheet" href="navbar.css">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	
+	<div class="nav">
+
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Destination</a></li>
+		<li><a href="#">Galery</a></li>
+		<li><a href="#">Request</a></li>
+		<li><a href="#">About Us</a></li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+</link>
+<link rel="stylesheet" type="text/css" href="loginlanjutan.css">
+		
+<div class="loginbox">
+	<img src="avaatar.jpg" class="avatar">
+	<h1>Login Here</h1>
+	<form id="loginform">
+		<p>Username</p>
+		<input type="text" id="user" name="user" placeholder="Enter Username">
+		<p>Password</p>
+		<input type="Password" id="pass" name="pass" placeholder="Enter Password">
+		<input type="submit" name="submit" value="Login" onclick="Warn();"/>
+		<a href="#">Forgot password</a>
+		<a href="#">Create account</a>
+</div>
+</form>
+
+</body>
+
+<script>
+         <!--
+            function Warn() {
+               var a = document.getElementById('user').value;
+               var b = document.getElementById('pass').value;
+
+                if(a ==="" || b === "")
+               alert ("Password or username hasn't been entered");
+           		
+               else{
+               	document.getElementById('loginform').method = "POST";
+               	document.getElementById('loginform').action = "process.php";
+               }
+
+            }
+         //-->
+      </script>
+
+</html>
