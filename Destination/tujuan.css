@@ -1,0 +1,33 @@
+body{
+	margin:0;
+	background:url('login1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1{
+	text-align: center;
+	color:white;
+}
+
+.thirds {
+	padding-bottom: 50px;
+	color:white;
+}
+
+.thirds img {
+	width: 340px;
+	height: 230px;
+}
+
+.one-third {
+	width: 30%;
+	float:left;
+	margin-left: 1%;
+}
+
+.one-third-last{
+	width: 30%;
+	float:left;
+	margin-left: 5%;
+}

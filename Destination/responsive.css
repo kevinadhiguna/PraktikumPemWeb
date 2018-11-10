@@ -1,0 +1,14 @@
+.one-third{
+	width: 47.5%;
+}
+
+.one-third-second{
+	margin:0;
+}
+
+.one-third-last {
+	clear:both;
+	float: none;
+	width: auto;
+	padding:20px 0 0 0;
+}
