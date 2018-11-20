@@ -1,0 +1,352 @@
+*{
+	font-family: 'Mali', cursive;
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image:url('login1.jpg');
+	background-size:cover;
+	font-family: 'Mali', cursive;
+	background-attachment: fixed;
+
+}
+.nav ul{
+	float : right;
+	list-style-type: none;
+	margin-top : 25px;
+}
+
+.nav ul li{
+	display : inline-block;
+}
+
+.nav ul li a{
+	text-decoration : none;
+	color: #fff;
+	padding : 5px 20px;
+	border: 1px solid transparent ;
+	transition: 0.6s ease;
+}
+
+.nav ul li a:hover{
+	background-color: #fff;
+	color : #000;
+}
+
+/* tampilan home*/
+.load{
+	animation: slide 2s;
+}
+
+.slider{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 40s infinite;
+}
+
+.content{
+	color : #fff;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal{
+	left : 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	letter-spacing: 5px;
+	text-align: center;
+	
+}
+
+.principal h1{
+
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.principal p{
+	font-size: 20px
+}
+
+@keyframes slide{
+	0%{
+		background-image: url('image_3.jpg');
+	}
+	20%{
+		background-image: url('image_3.jpg');
+	}
+	20.01%{
+		background-image: url('image2.jpg');
+	}
+	40%{
+		background-image: url('image2.jpg');
+	}
+	40.01%{
+		background-image: url('image6.jpg');
+	}
+	60%{
+		background-image: url('image6.jpg');
+	}
+	60.01%{
+		background-image: url('image4.jpg');
+	}
+	80%{
+		background-image: url('image4.jpg');
+	}
+	80.01%{
+		background-image: url('image5.jpg');
+	}
+	100%{
+		background-image: url('image5.jpg');
+	}
+}
+
+
+
+
+/*tampilan destination*/
+h2{
+	color:white;
+	text-align: center;
+}
+.container{
+	max-width: 1200px;
+	margin:auto;
+	background:transparent;
+	overflow: auto
+}
+
+.gallery{
+	margin:5px;
+	border:1px solid #ccc;
+	float: left;
+	width: 390px;
+}
+
+.gallery .desc{
+	color:white;
+}
+.gallery img{
+	width: 388px;
+	height: 230px;
+}
+.desc{
+	padding: 15px;
+	text-align: center;
+	color:black;
+}
+
+/*buat tujuan*/
+.thirds {
+	padding-bottom: 50px;
+	color:white;
+}
+
+.thirds img {
+	width: 340px;
+	height: 230px;
+}
+
+.one-third {
+	width: 30%;
+	float:left;
+	margin-left: 1%;
+}
+
+.one-third-last{
+	width: 30%;
+	float:left;
+	margin-left: 5%;
+}
+
+/*tampilan about us*/
+
+
+.team-section{
+	overflow: hidden;
+	text-align: center;
+	
+	padding :60px;
+
+}
+
+.team-section h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+}
+
+.border{
+	display:block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background :#3498db;
+	margin-bottom: 40px;
+}
+
+.ps{
+	margin-bottom: 40px;
+
+}
+
+.ps a{
+	display : inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.ps a img{
+	width: 100%;
+	filter:grayscale(100%);
+	transition: 0.4s all;
+}
+
+.ps a:hover > img{
+	filter: none;
+
+}
+
+.ps img{
+	height: 160px;
+	width: auto;
+}
+
+.section{
+	width: 600px;
+	margin:auto;
+	font-size: 20px;
+	color:white;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+
+.section:target{
+	height: auto;
+}
+
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	color:black;
+}
+
+.section p{
+	color:black;
+}
+
+/* tampilan login*/
+
+form.action{
+	color:white;
+}
+
+
+.loginbox{
+	margin-top: 1000px;
+	float: center;
+	padding: 10px 30px 30px 30px;;
+	width: 310px;
+	height: 310px;
+  	border-radius: 20px;  
+  	margin: auto;  
+ 	margin-top:20px;  
+  	border: 1px solid #fff;  
+   -moz-box-shadow: 0px 0px 25px black;
+
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50%;
+	left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align : center;
+	font-size: 22px;
+	color: white;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px; 
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background : transparent ;
+	outline : none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #2c3e50;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.logonbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background : #fff;
+	color: black;
+}
+
+.loginbox a{
+	position: :center;
+	text-decoration: none;
+	font-size:12px;
+	line-height: 20px;
+	color : white;
+}
+
+.loginbox a:hover {
+	color: #2c3e50;
+}
+
+/* tampilan request*/
+
+.request{
+	background-image: url(login1.jpg);
+	background-size:cover;
+	text-align: center;
+
+}
