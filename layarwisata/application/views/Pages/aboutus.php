@@ -11,18 +11,22 @@
 	<div class="nav">
 
 	<ul>
-		<li><a href="./home">Home</a></li>
-		<li><a href="./destination">Destination</a></li>
-		<li><a href="./gallery">Gallery</a></li>
-		<li><a href="./request">Request</a></li>
-		<li><a href="./aboutus">About Us</a></li>
-		<li><a href="./login">Login</a></li>
-		<li><form>
-  		<input class="search" type="text" placeholder="Cari..." required>	
-  		<input class="button" type="button" value="Cari">		
-			</form></li>
-		
-	</ul>
+    <li><a href="<?php echo base_url(); ?>home">Home</a></li>
+    <li><a href="<?php echo base_url(); ?>destinations">Destination</a></li>
+    
+    <li><a href="<?php echo base_url(); ?>aboutus">About Us</a></li>
+
+    <?php if(!$this->session->userdata('logged_in')) : ?>
+      <li><a href="<?php echo base_url(); ?>users/login">Login</a></li>
+      <li><a href="<?php echo base_url(); ?>users/register">Register</a></li>
+    <?php endif; ?>
+
+    <?php if($this->session->userdata('logged_in')) : ?>
+      <li><a href="<?php echo base_url(); ?>request">Request</a></li>
+      <li><a href="<?php echo base_url(); ?>destinations/create">Create Destination</a></li>
+      <li><a href="<?php echo base_url(); ?>users/logout">Logout</a></li>
+    <?php endif; ?>
+  </ul>
 	<br>
 	<br>
 	<br>
