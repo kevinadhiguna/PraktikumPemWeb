@@ -40,18 +40,18 @@
                 <table>
                 <tr>
                     <td>Kritik dan Saran</td>
-                    <td><textarea name="kritik" rows="5" cols="30" placeholder="Kritik & saran">
+                    <td><textarea name="kritik" rows="5" cols="18" placeholder="Kritik & saran">
                     </textarea></td>
                 </tr>
                   <tr>
                     <td>Tempat Wisata yang ingin ditambahkan</td>
-                    <td><textarea name="wisata" rows="5" cols="30" placeholder="tambah tempat wisata baru">
+                    <td><textarea name="wisata" rows="5" cols="18" placeholder="tambah tempat wisata baru">
                     </textarea></td>
                 </tr>    
                 </table>
             </div>
             <center>
-                <input type="submit" name="submit">
+                <input type="submit" name="submit" value="submit request!"> 
             </center>
     </form>
     </div>
